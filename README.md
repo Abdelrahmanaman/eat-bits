@@ -50,8 +50,10 @@ Feel free to contribute to EatBits by:
 
 Here's a preview of EatBits in action:
 
-![EatBits Example 1](assets/images/example1.jpg)
-![EatBits Example 2](assets/images/example2.jpg)
+<p align="center">
+  <img src="assets/images/example1.jpg" width="300" alt="EatBits Example 1" />
+  <img src="assets/images/example2.jpg" width="300" alt="EatBits Example 2" style="margin-left: 20px" />
+</p>
 
 ## 📝 License
 
