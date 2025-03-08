@@ -1,50 +1,58 @@
-# Welcome to your Expo app 👋
+# 🍽️ EatBits - Share Your Culinary Journey
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+EatBits is a modern social media app for food enthusiasts to share, discover, and engage with recipes. Built with [Expo](https://expo.dev) and featuring a sleek, Twitter-inspired interface.
 
-## Get started
+## ✨ Features
+
+- Beautiful animated tab bar with magnetic pill follower
+- Dark/light mode support
+- Modern, borderless UI design
+- Share your favorite recipes with the community
+- Discover trending recipes
+- Engage with other food lovers
+
+## 🚀 Getting Started
 
 1. Install dependencies
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. Start the app
 
    ```bash
-    npx expo start
+    bunx expo start
    ```
 
-In the output, you'll find options to open the app in a
+You can run the app on:
+- iOS simulator
+- Android emulator
+- Physical device using Expo Go
+- Development build for full native functionality
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- React Native with Expo
+- React Native Reanimated for smooth animations
+- NativeWind for styling
+- File-based routing
+- Custom animated components
 
-## Get a fresh project
+## 🤝 Contributing
 
-When you're ready, run:
+Feel free to contribute to EatBits by:
+- Reporting bugs
+- Suggesting new features
+- Submitting pull requests
 
-```bash
-npm run reset-project
-```
+## 📱 Screenshots
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Here's a preview of EatBits in action:
 
-## Learn more
+![EatBits Example 1](assets/images/example1.jpg)
+![EatBits Example 2](assets/images/example2.jpg)
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📝 License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
