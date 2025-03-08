@@ -14,11 +14,8 @@ export default function TabLayout() {
       screenOptions={{
         tabBarActiveTintColor: colors.tint,
         headerShown: false,
-        tabBarStyle: {
-          display: "none", // Hide the default tab bar
-        },
+        tabBarStyle: {},
       }}
-      tabBar={(props) => <TabBar {...props} />}
     >
       <Tabs.Screen
         name="index"
