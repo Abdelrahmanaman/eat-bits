@@ -1,74 +1,59 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-
-import { HelloWave } from '@/components/HelloWave';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+import { Image, View, Text } from "react-native";
+import { ScrollView } from "react-native";
 
 export default function HomeScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
-      headerImage={
+    <ScrollView className="flex-1 bg-white dark:bg-gray-900">
+      <View className="relative h-[200px] bg-[#A1CEDC] dark:bg-[#1D3D47]">
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require("@/assets/images/partial-react-logo.png")}
+          className="absolute bottom-0 left-0 h-[178px] w-[290px]"
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
-        <HelloWave />
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-    </ParallaxScrollView>
+      </View>
+
+      <View className="p-4">
+        <View className="flex-row items-center gap-2">
+          <Text className="text-3xl font-bold text-black dark:text-white">
+            Welcome Abdelrahman! 👋
+          </Text>
+        </View>
+
+        <View className="mt-6 space-y-6">
+          <View>
+            <Text className="text-xl font-bold text-black dark:text-white">
+              Step 1: Try it
+            </Text>
+            <Text className="mt-2 text-base text-gray-800 dark:text-gray-200">
+              Edit <Text className="font-semibold">app/(tabs)/index.tsx</Text>{" "}
+              to see changes. Press Hello to open developer tools.
+            </Text>
+          </View>
+
+          <View>
+            <Text className="text-xl font-bold text-black dark:text-white">
+              Step 2: Explore
+            </Text>
+            <Text className="mt-2 text-base text-gray-800 dark:text-gray-200">
+              Tap the Explore tab to learn more about what's included in this
+              starter app.
+            </Text>
+          </View>
+
+          <View>
+            <Text className="text-xl font-bold text-black dark:text-white">
+              Step 3: Get a fresh start
+            </Text>
+            <Text className="mt-2 text-base text-gray-800 dark:text-gray-200">
+              When you're ready, run{" "}
+              <Text className="font-semibold">npm run reset-project</Text> to
+              get a fresh <Text className="font-semibold">app</Text> directory.
+              This will move the current{" "}
+              <Text className="font-semibold">app</Text> to{" "}
+              <Text className="font-semibold">app-example</Text>.
+            </Text>
+          </View>
+        </View>
+      </View>
+    </ScrollView>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
-});
